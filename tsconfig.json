@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "Node",
+		"target": "ES2017",
+		"outDir": "out",
+		"rootDir": "./src",
+		"lib": [
+			"ES2017"
+		],
+		"sourceMap": true,
+		"strict": true
+	},
+	"exclude": [
+		"tests",
+		"node_modules",
+		".vscode-test"
+	]
+}
