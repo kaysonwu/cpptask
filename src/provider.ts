@@ -3,8 +3,10 @@ import { mkdirSync, symlinkSync } from 'fs';
 import type { ExecOptions } from 'child_process';
 import { TaskProvider, Task, TaskScope, CustomExecution } from 'vscode';
 import * as globby from 'globby';
+// @ts-ignore: default export.
+import * as slash from 'slash';
 import { CppTaskDefinition } from './interface';
-import { mergeDefinition, normalizePatterns, relatives, slash } from './utils';
+import { mergeDefinition, normalizePatterns, relatives } from './utils';
 import Terminal from './terminal';
 
 class CppTaskProvider implements TaskProvider {
