@@ -84,8 +84,7 @@
 	},
 	"dependencies": {
 		"globby": "^11.0.0",
-		"lodash.merge": "^4.6.0",
-		"slash": "^3.0.0"
+		"lodash.merge": "^4.6.0"
 	},
 	"devDependencies": {
 		"@types/lodash.merge": "^4.6.0",
