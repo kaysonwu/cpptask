@@ -1,7 +1,7 @@
 {
 	"name": "cpptask",
-	"displayName": "C/C++ Compile Task",
-	"description": "Multi-file compile task for debugging C/C++",
+	"displayName": "C/C++ Build Task",
+	"description": "Multi-file Build task for debugging C/C++",
 	"version": "0.0.1",
 	"main": "./out/extension.js",
 	"engines": {
