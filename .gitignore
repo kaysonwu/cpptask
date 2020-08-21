@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+.vscode-test
+out
+
+# editor
+.vscode
+!.vscode/launch.json
+!.vscode/tasks.json
