@@ -1,7 +1,5 @@
 import { relative } from 'path';
 // @ts-ignore: default export.
-import * as slash from 'slash';
-// @ts-ignore: default export.
 import * as merge from 'lodash.merge';
 import { CppTaskDefinition } from './interface';
 
@@ -13,6 +11,17 @@ import { CppTaskDefinition } from './interface';
  */
 function wrap<T>(value: T | T[]) {
   return Array.isArray(value) ? value : [value];
+}
+
+export function slash(path: string) {
+  const isExtendedLengthPath = /^\\\\\?\\/.test(path);
+	const hasNonAscii = /[^\u0000-\u0080]+/.test(path);
+
+	if (isExtendedLengthPath || hasNonAscii) {
+		return path;
+	}
+
+	return path.replace(/\\/g, '/');
 }
 
 function normalizePlatform(platform: NodeJS.Platform) {
