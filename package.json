@@ -74,7 +74,12 @@
 						"properties": {
 							"cwd": {
 								"type": "string",
+								"default": "${workspaceFolder}",
 								"description": "%c_cpp.taskDefinitions.options.cwd.description%"
+							},
+							"env": {
+								"type": "object",
+								"description": "%c_cpp.taskDefinitions.options.env.description%"
 							}
 						}
 					}

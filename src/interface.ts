@@ -1,7 +1,14 @@
 import { TaskDefinition } from 'vscode';
 
 export interface CppTaskOption {
+  /**
+   * The current working directory of the compiler.
+   */
   cwd?: string;
+
+  /**
+   * The shell environment of the compiler.
+   */
   env?: any;
 }
 
@@ -21,12 +28,12 @@ export interface CppTaskPlatformDefinition {
   compilerArgs: string[];
 
   /**
-   * 
+   * Additional include directories, will find header files in it.
    */
   includePath?: string[];
 
   /**
-   * 
+   * Additional library directories, will find library files in it.
    */
   libraryPath?: string[];
 
