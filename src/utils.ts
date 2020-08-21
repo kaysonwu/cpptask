@@ -39,9 +39,11 @@ export function mergeDefinition(definition: CppTaskDefinition, platform = proces
 }
 
 export function normalizePatterns(patterns: string | string[]) {
-  return wrap(patterns).map(
-    pattern => process.platform === 'win32' ? slash(pattern) : pattern
-  );
+  if (process.platform === 'win32') {
+    return wrap(patterns).map(slash);
+  }
+
+  return patterns;
 }
 
 export function relatives(from: string, to: string[]) {
