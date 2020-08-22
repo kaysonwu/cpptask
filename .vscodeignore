@@ -1,0 +1,11 @@
+# editor
+.vscode/**
+
+# source files
+src/**
+tests/**
+
+# development files
+.eslintrc.json
+.gitignore
+tsconfig.json
