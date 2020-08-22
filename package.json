@@ -21,7 +21,7 @@
 		"url": "https://github.com/kaysonwu/cpptask/issues"
 	},
 	"engines": {
-		"vscode": "^1.48.0"
+		"vscode": "^1.48.1"
 	},
 	"categories": [
 		"Debuggers"
