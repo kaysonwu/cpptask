@@ -3,7 +3,7 @@
 		"module": "commonjs",
 		"moduleResolution": "Node",
 		"target": "ES2017",
-		"outDir": "out",
+		"outDir": "dist",
 		"rootDir": "./src",
 		"lib": [
 			"ES2017"
