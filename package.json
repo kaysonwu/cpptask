@@ -3,6 +3,7 @@
 	"displayName": "C/C++ Build Task",
 	"description": "Visual Studio Code task provider for compiling C/C++ project",
 	"version": "0.0.1",
+	"icon": "icon.png",
 	"publisher": "kaysonwu",
 	"license": "MIT",
 	"author": {
