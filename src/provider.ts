@@ -98,8 +98,11 @@ class CppTaskProvider implements TaskProvider {
         TaskScope.Workspace,
         'cpp', 
         'cpp',
-        // @ts-ignore
-        new CustomExecution(async definition => new Terminal(...(await CppTaskProvider.parseDefinition(definition)))),
+        new CustomExecution(
+          async definition => new Terminal(
+            ...(await CppTaskProvider.parseDefinition(definition as CppTaskDefinition))
+          )
+        ),
       );
     }
 
